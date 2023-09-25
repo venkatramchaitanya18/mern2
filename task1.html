@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="num1">Given Number is : </h1>
+    <h1 id="num2"></h1>
+
+    <script>
+        var ans = 0;
+        var num = prompt("enter the Number : ");
+        document.getElementById('num1').innerHTML='Given Number is : '+num;
+        myFunction(num);
+        function myFunction(num) {
+            while(num!=0){
+            temp = num%10;
+            ans = ans*10 + temp;
+            num = Math.floor(num/10);
+            }
+
+            document.getElementById('num2').innerHTML='Reverse of Number is : '+ans;
+
+        }
+    </script>
+    
+</body>
+</html>
