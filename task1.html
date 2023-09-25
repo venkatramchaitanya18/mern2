@@ -1,30 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <h1 id="num1">Given Number is : </h1>
-    <h1 id="num2"></h1>
 
-    <script>
-        var ans = 0;
-        var num = prompt("enter the Number : ");
-        document.getElementById('num1').innerHTML='Given Number is : '+num;
-        myFunction(num);
-        function myFunction(num) {
-            while(num!=0){
-            temp = num%10;
-            ans = ans*10 + temp;
-            num = Math.floor(num/10);
-            }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-            document.getElementById('num2').innerHTML='Reverse of Number is : '+ans;
+    <style>
+        .column {
+            float: left;
+            padding: 10px 10px 10px 10px;
 
         }
-    </script>
+
+        .column.side {
+            width: 15%;
+            padding-bottom: 700px;
+        }
+
+        .column.middle {
+            width: 85%;
+            
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+
+    <header class="bg-info pt-2 pb-2 ">
+        <div class="text-center" style="font-size: 20px; font-weight: 100px;">Ethnus layout</div>
+    </header>
+
+    <nav class="navbar bg-secondary pt-1 pb-1">
+
+        <div>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link me-5" style="color: white;" href="#">HOME</a></li>
+                <li class="nav-item"><a class="nav-link me-5" style="color: white;" href="#">MENU</a></li>
+                <li class="nav-item"><a class="nav-link me-5" style="color: white;" href="#">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link me-5" style="color: white;" href="#">CONTACT</a></li>
+
+
+
+            </ul>
+
+
+        </div>
+        <div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item"><a class="nav-link me-3 " style="color: white;" href="#">SIGNUP</a></li>
+                <li class="nav-item"><a class="nav-link me-3 " style="color: white;" href="#">LOGIN</a></li>
+
+
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <main>
+        <div class="column middle">
+            <p class="text-center text-dark">Write your content here</p>
+
+        </div>
+
+        <div class="column side bg-dark">
+            <p class="text-center text-light">This is</p>
+        </div>
+
+    </main>
+
+
+
     
+
+
 </body>
+
 </html>

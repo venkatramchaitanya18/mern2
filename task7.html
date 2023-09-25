@@ -1,41 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>JavaScript Animation</title>
-    <style>
-        #myImage {
-            position: relative;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <form>
-        <img id="myImage" src="train.gif" alt="Train" />
-        <p>Click the buttons below to handle animation</p>
-        <input type="button" value="Start" onclick="moveRight();" />
-        <input type="button" value="Stop" onclick="stop();" />
-    </form>
+    <h1 id="num1">Given Number is : </h1>
+    <h1 id="num2"></h1>
 
     <script>
-        let imgObj = null;
-        let animate;
+        var ans = 0;
+        var num = prompt("enter the Number : ");
+        document.getElementById('num1').innerHTML='Given Number is : '+num;
+        myFunction(num);
+        function myFunction(num) {
+            while(num!=0){
+            temp = num%10;
+            ans = ans*10 + temp;
+            num = Math.floor(num/10);
+            }
 
-        function init() {
-            imgObj = document.getElementById('myImage');
-            imgObj.style.left = '0px';
+            document.getElementById('num2').innerHTML='Reverse of Number is : '+ans;
+
         }
-
-        function moveRight() {
-            imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
-            animate = setTimeout(moveRight, 20); // call moveRight in 20ms
-        }
-
-        function stop() {
-            clearTimeout(animate);
-            imgObj.style.left = '0px';
-        }
-
-        window.onload = init;
     </script>
+    
 </body>
 </html>

@@ -1,37 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Display Date on Button Click</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .card:hover {
+            transform: scale(1.02);
+            cursor: pointer;
+
+        }
+    </style>
+
+
+
+
 </head>
+
 <body>
-    <button id="dateButton1">Show Date </button>
-    <p id="dateDisplay1"></p>
 
-    <button id="dateButton2">Show Time</button>
-    <p id="dateDisplay2"></p>
+    <div class="container mt-5 ">
 
-    <script>
-        function displayDate1() {
-            var options = { day: 'numeric', month: 'long', year: 'numeric' };
-            var currentDate = new Date();
-            var formattedDate = currentDate.toLocaleDateString(undefined, options);
-            formattedDate = formattedDate.replace(/ /g, '/'); // Replace spaces with forward slashes
-            var dateDisplay = document.getElementById("dateDisplay1");
-            dateDisplay.innerHTML =  formattedDate;
-        }
+        <div class="row">
 
-        function displayDate2() {
-            var currentDate = new Date();
-            var formattedDate = currentDate.toString();
-            var dateDisplay = document.getElementById("dateDisplay2");
-            dateDisplay.innerHTML = formattedDate;
-        }
+            <div class="col-sm-3">
+                <div class="card">
 
-        var dateButton1 = document.getElementById("dateButton1");
-        dateButton1.addEventListener("click", displayDate1);
+                    <div class="position-relative">
+                        <img class="card-img-top" src="https://unsplash.it/400/400" alt="image4" width="170px"
+                            height="200px" />
+                        <span
+                            class="position-absolute top-50 start-50 translate-middle pe-10 text-light display-5 ">Material
+                            Cards</span>
+                    </div>
 
-        var dateButton2 = document.getElementById("dateButton2");
-        dateButton2.addEventListener("click", displayDate2);
-    </script>
+
+                    <div class="card-body ">
+                        <p class="card-text">Cards for display in Portfolio style material design by Google.</p>
+                        <hr />
+
+                        <a href="#" class="text-warning"
+                            style="text-decoration: none; font-size: 25px; margin-bottom: 10px;">LINK</a>
+                        <a href="#" class="text-warning ps-3"
+                            style="text-decoration: none; font-size: 25px; margin-bottom: 10px;">LINK</a>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+
+                    <div class="position-relative">
+                        <img class="card-img-top" src="https://unsplash.it/400/400" alt="image4" width="170px"
+                            height="200px" />
+                        <span
+                            class="position-absolute top-50 start-50 translate-middle pe-10 text-light display-5 ">Material
+                            Cards</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Cards for display in Portfolio style material design by Google.</p>
+                        <hr />
+
+                        <a href="#" class="text-warning"
+                            style="text-decoration: none; font-size: 25px; margin-bottom: 10px;">LINK</a>
+                        <a href="#" class="text-warning ps-3"
+                            style="text-decoration: none; font-size: 25px; margin-bottom: 10px;">LINK</a>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+
+                    <div class="position-relative">
+                        <img class="card-img-top" src="https://unsplash.it/400/400" alt="image4" width="170px"
+                            height="200px" />
+                        <span
+                            class="position-absolute top-50 start-50 translate-middle pe-10 text-light display-5 ">Material
+                            Cards</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Cards for display in Portfolio style material design by Google.</p>
+                        <hr />
+
+                        <a href="#" class="text-warning"
+                            style="text-decoration: none; font-size: 25px; margin-bottom: 10px;">LINK</a>
+                        <a href="#" class="text-warning ps-3"
+                            style="text-decoration: none; font-size: 25px; margin-bottom: 10px;">LINK</a>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+
+                    <div class="position-relative">
+                        <img class="card-img-top" src="https://unsplash.it/400/400" alt="image4" width="170px"
+                            height="200px" />
+                        <span
+                            class="position-absolute top-50 start-50 translate-middle pe-10 text-light display-5 ">Material
+                            Cards</span>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-text">Cards for display in Portfolio style material design by Google.</p>
+                        <hr />
+
+                        <a href="#" class="text-warning"
+                            style="text-decoration: none; font-size: 25px; margin-bottom: 10px;">LINK</a>
+                        <a href="#" class="text-warning ps-3"
+                            style="text-decoration: none; font-size: 25px; margin-bottom: 10px;">LINK</a>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
 </body>
+
 </html>
